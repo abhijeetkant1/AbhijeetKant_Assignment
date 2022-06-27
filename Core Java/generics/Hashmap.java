@@ -2,10 +2,9 @@ package com.cg.generics;
 
 import java.util.HashMap;
 import java.util.Random;
-
-public class Nums 
-{
-	public static void main(String[] args) {
+//put random numbers in hashmap
+public class Hashmap {
+    public static void main(String[] args) {
         HashMap<Integer,Double> store=new HashMap<Integer,Double>();
         Random r=new Random();
         int max=45;

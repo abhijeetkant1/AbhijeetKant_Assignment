@@ -1,18 +1,16 @@
 package com.cg.generics;
-
-public class ClientClass 
-{
-	public static void main(String[] args) {
-        pair<String, String> object=new pair<String, String>("1","Hello");
+public class PairScenario1 {
+    public static void main(String[] args) {
+        Pair<String, String> object=new Pair<String, String>("1","Hello");
         System.out.println("{"+object.getObj1()+"="+object.getObj2()+"}");
 
     }
 }
-class pair<K,V>{
+class Pair<K,V>{
     private K obj1;
     private V obj2;
 
-    public pair(K obj1,V obj2){
+    public Pair(K obj1,V obj2){
         this.obj1=obj1;
         this.obj2=obj2;
     }
@@ -22,4 +20,5 @@ class pair<K,V>{
     public V getObj2() {
         return obj2;
     }
+
 }
